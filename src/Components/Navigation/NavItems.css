@@ -1,0 +1,93 @@
+/* Overall navigation container */
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo/name section */
+#logo-name a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hover effect on logo/name */
+#logo-name a:hover {
+    color: #ff6f61;
+}
+
+/* Menu container */
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Inner menu wrapper */
+#menuinside {
+    display: flex;
+}
+
+/* Navigation list styling */
+#nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Individual list item styling */
+#nav-list li {
+    margin-left: 20px;
+}
+
+/* Link styling */
+#nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects for links */
+#nav-list li a:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+/* Active link styling (if you plan to add active states later) */
+#nav-list li a.active {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    #navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menuinside {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    #nav-list {
+        flex-direction: column;
+    }
+
+    #nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
